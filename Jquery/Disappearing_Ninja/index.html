@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Ninjas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+    <div class="ninja">
+        <img src="ninja.jpg" alt="">
+    </div>
+
+
+    
+    
+
+    <button>Restore</button>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+
+        $("img").click(function(){
+            $(this).hide();
+        })
+
+        
+        $("button").click(function(){
+            $("img").show();
+        })
+    </script>
+</body>
+</html>

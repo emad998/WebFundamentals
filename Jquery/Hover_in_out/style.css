@@ -1,0 +1,6 @@
+.photoContainer {
+    height: 235px;
+    width: 215px;
+    background-color: red;
+    display: inline-block;
+}

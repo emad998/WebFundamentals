@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="addClass">AddClass</button>
+    <h1>AddClass</h1>
+    <p>Click the button to add class 'red' to this paragraph</p>
+    <hr>
+    <button class="slideToggle">Slidetoggle</button>
+    <h1>Slidetoggle</h1>
+    <p>Click the button to slidetoggle a hidden image</p>
+    <hr>
+    <button class="append">Append</button>
+    <h1 class="appendingParagraph">Append</h1>
+    <p>Click the button to append a new paragraph</p>
+    <img src="church.jpg" alt="church photo">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // $('h1').hide()
+
+
+        // $('h1').click(function (){
+        //     $(this).hide()
+        // })
+
+        // $('h1').toggle()
+
+        // $('img').click(function (){
+        //     $(this).slideUp()
+        // })
+
+        
+        
+        $('.slideToggle').click(function (){
+           $("img").hide();
+          })
+
+          $(".append").click(function(){
+              $("img").fadeIn("slow", function(){
+                //   animartion complete
+              });
+          })
+
+        // $("button.addClass").click(function(){
+        //     $("p").addClass("btn");
+        // })
+
+        // $("h1").append("Emad");
+
+        // $("h1").prepend("Emad");
+
+        // $("h1").html("<p>emad</p>")
+        // $("h1").text("Emad")
+
+        // $("img").hide()
+
+        // $(".slideToggle").click(function(){
+        //     $("img").slideToggle()
+        // })
+
+        // $(".append").click(function(){
+        //     $("h1.appendingParagraph").append("Emad")
+        // })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: #F7F7F7;
+    padding-top: 10px;
+}
+
+.header h1 {
+    display: inline;
+    padding-left: 5%;
+    vertical-align: middle;
+    
+}
+
+.header h4 {
+    display: inline;
+    padding-left: 50%;
+    vertical-align: middle;
+}
+
+/* body-wrapper */
+.body-wrapper {
+    height: 950px;
+    width: 100%;
+    background-color: #49353D;
+}
+
+/* continerOne */
+.containerOne {
+    height: 300px;
+    width: 35%;
+    background-color: red;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 4%;
+    border-style: groove;
+    
+}
+
+.main-photo {
+    height: 300px;
+    width: 100%;
+}
+
+/* containerTwo  */
+.containerTwo {
+    height: 300px;
+    width: 42%;
+    background-color: #EAE1E9;
+    display: inline-block;
+    margin-left: 15%;
+    vertical-align: text-bottom;
+    
+}
+
+.containerTwoHeader {
+    height: 50px;
+    background-color: #888794;
+    
+}
+
+.lineUnder {
+    text-decoration: underline;
+}
+
+.containerTwoHeader h2 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.containerTwoBody {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* containerThree */
+.containerThree {
+    height: 600px;
+    width: 28%;
+    background-color: #DFD2DE;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 4%;
+    overflow: auto;
+    
+}
+
+.containerThreeHeader {
+    height: 50px;
+    background-color: #888794;
+}
+
+.containerThreeHeader h2 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.containerThreeMainImage {
+    height: 157px;
+    width: 100%;
+}
+
+.imageTextOne {
+    width: 100%;
+    height: 270px;
+    background-color: #E1D5E1;
+}
+
+.imageTextOne p {
+    padding: 10px;
+}
+
+.technologyImagesButton {
+    width: 100%;
+    height: 230px;
+    background-color: #E0D4DF;
+    
+    
+}
+
+.technology {
+    height: 65px;
+}
+
+.modeButton {
+   display: block;
+   background-color: green;
+   border-radius: 4px;
+   margin-top: 30px;
+   margin-left: 150px;
+   width: 70px;
+    border: 1px solid;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #F7F7F7;
+}
+
+.footerImage {
+    height: 15px;
+    
+}
+.footerText {
+    margin-left: 45%;
+    padding-top: 10px;
+}
+
+.footerMargin {
+    margin-left: 44%;
+    padding-top: 3px;
+}
+
+.footerTextUnderlined {
+    display: inline;
+    
+    vertical-align: middle;
+}

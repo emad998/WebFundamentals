@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover in/out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photoContainer">
+        <img src="ninja.jpg" alt-image="ninja2.png" temp=''>
+    </div>
+
+    <div class="photoContainer">
+        <img src="ninja.jpg" alt-image="ninja2.png" temp=''>
+    </div>
+
+    <div class="photoContainer">
+        <img src="ninja.jpg" alt-image="ninja2.png" temp=''>
+    </div>
+
+    <div class="photoContainer">
+        <img src="ninja.jpg" alt-image="ninja2.png" temp=''>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        
+
+        $("img").hover(function(){
+            $(this).attr("temp", $(this).attr("src"));
+            $(this).attr("src", $(this).attr("alt-image"));
+            $(this).attr("alt-image", $(this).attr("temp"));
+            
+        })
+    </script>
+</body>
+</html>

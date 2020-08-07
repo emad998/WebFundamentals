@@ -1,0 +1,23 @@
+function printValuesSum(arr){
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++){
+        sum = sum + arr[i];
+        console.log(arr[i]);
+        console.log(sum);
+    }
+}
+
+printValuesSum([6,3,5,1,2,4]);
+
+
+
+
+function valueMultiplyPosition(arr){
+
+    for(var i =0; i < arr.length; i++){
+        arr[i] = arr[i] * i;
+    }
+    return arr;
+}
+
+valueMultiplyPosition([6,3,5,1,2,4]);

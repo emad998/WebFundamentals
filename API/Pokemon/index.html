@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pokedeck</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            for (var i = 1; i < 151; i++) {
+                $('#pokemon').append(`<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png" id="${i}">`);
+            }
+
+ $(document).on("click", "img", function(){
+                var id = this.id
+                $.get('http://pokeapi.co/api/v2/pokemon/' + id, function(res) {
+                    var html_str = "";
+                    html_str += `<div id="img"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png" id="${id}"></div>`;
+                    html_str += "<h4>Name: " + res['name'] + "</h4>";
+                    html_str += "<h4>Height:</h4>";
+                    html_str += res['height'];
+                    html_str += "<h4>Weight</h4>";
+                    html_str += res['weight'];
+                    html_str += "<h4>Types</h4>";
+                    html_str += "<ul>";
+                    for (var k = 0; k < res['types'].length; k++) {
+                        html_str += "<li>" + res['types'][k]['name'] + "</li>";
+                    }
+                    html_str += "</ul>";
+
+
+              $('#pokedeck').html(html_str)
+                    $('html, body').animate({scrollTop: 0}, 600);
+                });
+            })
+
+         });
+    </script>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #pokemon {
+            width: 70%;
+            float: left;
+            min-height: 300px;
+            box-sizing: content-box;
+            margin-right: 1%;
+        }
+
+        #pokedeck {
+            width: 27%;
+            box-sizing: border-box;
+            border: 10px solid red;
+            float: left;
+            height: 500px;
+            padding: 30px;
+        }
+        #img{
+            width: 30%;
+            box-sizing: border-box;
+            border: 10px solid red;
+            height: 110px;
+            margin: 10px auto;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class='row'>
+    <div id='pokemon'></div>
+    <div id='pokedeck'>
+        <div id="img"></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- $(document).ready(function () {
+
+    $('button').click(function(){
+        var userInput = $('.search').val();
+        console.log(userInput);
+        var url = "https://pokeapi.co/api/v2/pokemon/"+userInput;
+
+
+        $.get(url, function(res){
+            console.log(res);
+            console.log(`Pokemon name: ${res.name}`)
+            console.log(`Pokemon Type: ${res.types[0].type.name}`)
+            //console.log(`Pokemon Ability: ${res.abilities[1].ability.name}`);
+            console.log(`Pokemon Image: ${res.sprites.front_default}`)
+
+            $('.pokeName').text(res.name)
+            $('.type').text(res.types[0].type.name)
+            //$('.ability').text(res.abilities[1].ability.name)
+            $('.pokeImg').attr('src', res.sprites.front_default)
+
+            setInterval(function(){
+                console.log("Set interval working");
+
+                var picRotation = $('.pokeImg').attr('src');
+
+                if(picRotation === res.sprites.front_default){
+                    $('.pokeImg').attr('src', res.sprites.back_default)
+                } else {
+                    $('.pokeImg').attr('src', res.sprites.front_default)
+                }
+
+            }, 1000)
+
+        })
+
+      })
+  }); -->

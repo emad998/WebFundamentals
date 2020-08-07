@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.white {
+    color: #FDFDFD;
+}
+
+.logoBlue {
+    color: #0F5A8A;
+}
+
+/* wrapper */
+.wrapper {
+    height: 1096px;
+    width: 100%;
+    background-color: #062134;
+}
+
+/* company name and navigation bar */
+.companyNameBox {
+    height: 100px;
+    width: 33%;
+    background-color: #062134;
+    display: inline-block;
+    
+}
+
+.companyName {
+    padding-left: 15%;
+    padding-top: 20px;
+}
+
+.navigationBar {
+    height: 100px;
+    width: 64%;
+    background-color: #062134;
+    display: inline-block;
+    vertical-align: bottom;
+    
+}
+
+.navigationBar ul li {
+    display: inline;
+    padding-left: 13%;
+}
+
+.navigationItems {
+    padding: 3%;
+    
+}
+
+.navigationText {
+    font-size: larger;
+}
+
+/* main content */
+.mainContentWrapper {
+    height: 900px;
+    width: 92%;
+    background-color: white;
+    margin-left: 4%;
+    
+    
+}
+
+
+.mainImageBox {
+    height: 400px;
+    width: 97%;
+    background-color: white;
+    margin-left: 1%;
+}
+
+.mainImage {
+    width: 100%;
+    height: 389px;
+    margin-top: 10px;
+}
+
+/* sub content box */
+.subContentBox {
+    height: 200px;
+    width: 30%;
+    background-color: #1468A8;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.subContentImageWrapper {
+    width: 20%;
+    height: 36px;
+    
+    margin-left: 5%;
+    display: inline-block;
+    
+}
+
+.subContentHeader {
+    width: 50%;
+    height: 36px;
+    
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.subContentImage {
+    height: 36px;
+    width: 70%;
+}
+
+.subContentHeaderText {
+    font-size: xx-large;
+}
+
+.subContentBox p {
+    padding: 12px;
+    
+}
+
+.subContentButton {
+    height: 50px;
+    width: 40%;
+    margin-left: 7%;
+    font-size: x-large;
+    background-image: linear-gradient(#49AEEC, #1993DE);
+    border-radius: 7px;
+
+}
+
+
+/* left down box */
+
+.leftDownBoxWrapper {
+    height: 259px;
+    width: 60%;
+    
+    margin-top: 20px;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+
+.leftDownBoxHeader {
+    height: 50px;
+    width: 50%;
+    
+}
+
+
+.leftDownBoxImageWrapper {
+    height: 198px;
+    width: 50%;
+    background-color: tomato;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.leftDownBoxTextWrapper {
+    height: 196px;
+    width: 48%;
+   
+    display: inline-block;
+    vertical-align: bottom;
+    
+}
+
+.leftDownBoxImage {
+    height: 198px;
+    width: 100%;
+}
+
+
+
+.learn {
+    color: #7AA0BC;
+    font-size: x-large;
+}
+
+
+/* right down box */
+.rightDownBoxWrapper {
+    height: 257px;
+    width: 35%;
+    
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+.testimonyWrapper {
+    background-color: #DAEDFF;
+    height: 162px;
+    width: 84%;
+    margin-top: 32px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.testimonyWrapper p {
+    font-size: x-large;
+}
+
+/* footer */
+.footer {
+    background-color: #DAEDFF;
+    width: 92%;
+    height: 85px;
+    margin-left: 4%;
+}
+
+.footer ul li {
+    display: inline;
+    padding-left: 4%;
+   
+    
+    
+
+}
+
+.footerItems {
+    padding: 2%;
+    margin-left: 28%;
+}
+
+.selectedFooterItem {
+    color: #98C8ED;
+}
+
+.unselectedFooterItem {
+    color: #6B98BA;
+}

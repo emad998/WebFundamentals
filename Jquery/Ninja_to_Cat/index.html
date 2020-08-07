@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photoContainer">
+        <img src='images/img/ninja0.png' data-alt-src='images/img/cat0.png' temp ='' />
+        
+
+
+    </div>
+
+    <div class="photoContainer">
+        <img src='images/img/ninja1.png' data-alt-src='images/img/cat1.png' temp='' />
+        
+
+
+    </div>
+
+    <div class="photoContainer">
+        <img src='images/img/ninja2.png' data-alt-src='images/img/cat2.png' temp='' />
+        
+
+
+    </div>
+
+    <div class="photoContainer">
+        <img src='images/img/ninja3.png' data-alt-src='images/img/cat3.png' temp='' />
+        
+
+
+    </div>
+
+    <div class="photoContainer">
+        <img src='images/img/ninja4.png' data-alt-src='images/img/cat4.png' temp='' />
+        
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("img").click(function(){
+
+            
+            // $(this).attr("src", $(this).attr("data-alt-src"))
+            $(this).attr("temp", $(this).attr("src"));
+            $(this).attr("src", $(this).attr("data-alt-src"));
+            $(this).attr("data-alt-src", $(this).attr("temp"));
+            
+            
+        })
+            
+
+        
+    </script>
+</body>
+</html>
